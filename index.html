@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Осколки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="layout">
+ 
+      <nav class="sidebar" aria-label="INFORMATION CATEGORIES">
+        <h1>ОСКОЛКИ</h1>
+ 
+        <button class="nav-btn active" data-target="players" aria-pressed="true">
+          Игроки
+        </button>
+        <button class="nav-btn" data-target="NPC">
+          NPC
+        </button>
+        <button class="nav-btn" data-target="races">
+          Расы
+        </button>
+        <button class="nav-btn" data-target="spells">
+          Заклинания
+        </button>
+        <span class="sidebar h3">---</span>
+        <button class="nav-btn" data-target="map">
+          Карта
+        </button>
+      </nav>
+ 
+      <main class="main">
+        <div class="content-block active" id="content-players">
+          <h2>Заголовок1</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+ 
+        <div class="content-block" id="content-NPC">
+          <h2>Заголовок2</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+ 
+        <div class="content-block" id="content-races">
+          <h2>Заголовок3</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+ 
+        <div class="content-block" id="content-spells">
+          <h2>Заголовок4</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+ 
+        <div class="content-block" id="content-map">
+          <h2>Заголовок5</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+      </main>
+ 
+    </div>
+  </div>
+  
+  <script>
+    const btns = document.querySelectorAll('.nav-btn');
+    const blocks = document.querySelectorAll('.content-block');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+        blocks.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed','true');
+        document.getElementById('content-' + btn.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
