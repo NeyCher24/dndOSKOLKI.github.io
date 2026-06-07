@@ -9,11 +9,11 @@
 
   <div class="page">
     <div class="layout">
- 
+
       <nav class="sidebar" aria-label="INFORMATION CATEGORIES">
         <a href="#" id="home-link"><h1>ОСКОЛКИ</h1></a>
- 
-        <button class="nav-btn active" data-target="players" aria-pressed="true">
+
+        <button class="nav-btn" data-target="players" aria-pressed="false">
           Игроки
         </button>
         <button class="nav-btn" data-target="NPC">
@@ -30,12 +30,13 @@
           Карта
         </button>
       </nav>
- 
+
       <main class="main">
+
         <div class="content-block active" id="content-welcome">
-       <h2>Добро пожаловать в Осколки</h2>
-       <p class="subtitle">Выбери раздел слева чтобы начать</p>
-       <p>Здесь хранятся все знания о мире — игроки, NPC, расы и многое другое</p>
+          <h2>Добро пожаловать в Осколки</h2>
+          <p class="subtitle">Выбери раздел слева чтобы начать</p>
+          <p>Здесь хранятся все знания о мире — игроки, NPC, расы и многое другое</p>
         </div>
 
         <div class="content-block" id="content-players">
@@ -47,67 +48,92 @@
               <img src="otto.png" alt="Отто Орарь" class="card-img">
               <p class="card-name">Отто Орарь</p>
             </div>
-          
-            
-            <div class="cards-grid">
             <div class="card" data-target="player-Gryzha">
               <img src="gryzha.png" alt="Грыжа" class="card-img">
               <p class="card-name">Грыжа</p>
             </div>
-
-            <div class="cards-grid">
             <div class="card" data-target="player-Sancho">
-              <img src="sancho.png" alt="Санчо" class="card-img">
-              <p class="card-name">Санчо</p>
+              <img src="sancho.png" alt="Дон Кихот" class="card-img">
+              <p class="card-name">Дон Кихот</p>
             </div>
-            
-             <div class="cards-grid">
             <div class="card" data-target="player-Alvin">
-              <img src="alvin.png" alt="Альвин Кулир" class="card-img">
-              <p class="card-name">Альвин Кулир</p>
+              <img src="alvin.png" alt="Альвин Кувир" class="card-img">
+              <p class="card-name">Альвин Кувир</p>
             </div>
-
-            <div class="cards-grid">
-            <div class="card" data-target="player-Alvin">
-              <img src="Brad.png" alt="Брад" class="card-img">
-              <p class="card-name">Брад</p>
+            <div class="card" data-target="player-Brand">
+              <img src="Brad.png" alt="Бранд" class="card-img">
+              <p class="card-name">Бранд</p>
             </div>
-
-          
           </div>
         </div>
- 
+
+        <div class="content-block" id="content-player-Otto">
+          <button class="back-btn" data-target="players">← Назад</button>
+          <h2>Отто Орарь</h2>
+          <p class="subtitle">Дроу, Жрец 3-го уровня</p>
+          <p>Брошенное дитя, которого приютил добрый священник по имени Патрик. Будучи воспитанным в церкви, решил посвятить свою жизнь служению богу жизни — Хиляй. Однако тёмные времена настали для церкви, Отто предстоит достать большие деньги, чтобы церковь продолжила функционировать.</p>
+        </div>
+
+        <div class="content-block" id="content-player-Gryzha">
+          <button class="back-btn" data-target="players">← Назад</button>
+          <h2>Грыжа</h2>
+          <p class="subtitle">Гоблин, Монах/Колдун 3-го уровня</p>
+          <p>Честная душа рождённая в проклятом обличии, что вызывает лишь ненависть в глазах людей. Медитации и упорные тренировки закалили его, он отринул своё тело и теперь верит лишь в торжество разума.</p>
+        </div>
+
+        <div class="content-block" id="content-player-Sancho">
+          <button class="back-btn" data-target="players">← Назад</button>
+          <h2>Дон Кихот</h2>
+          <p class="subtitle">Человек, Паладин 3-го уровня</p>
+          <p>Его догмы - слава, его клинок - смерть, а шляпа - защита от всевозможных невзгод. Его история покрыта мраком и безрассудством, но таких существ и называют героями.</p>
+        </div>
+
+        <div class="content-block" id="content-player-Alvin">
+          <button class="back-btn" data-target="players">← Назад</button>
+          <h2>Альвин Кувир</h2>
+          <p class="subtitle">Человек, Волшебник 3-го уровня</p>
+          <p>"Умнейший из ныне живущих" или же простой выпускник магической академии. Ещё будучи студентом он поставил себе цель изучить всю возможную магию и найти её источник. Получится ли это у него? - Время покажет.</p>
+        </div>
+
+        <div class="content-block" id="content-player-Brand">
+          <button class="back-btn" data-target="players">← Назад</button>
+          <h2>Бранд</h2>
+          <p class="subtitle">Полурослик, Бард 3-го уровня</p>
+          <p>Его песнь прекрасна, а голос весел. Объездив почти всю Империю, Бранд не знал усталости и тех, кто не выпил бы с ним по кружке хорошего эля. Мозг команды, что готов сыграть любую песню - что для погони, что для битвы.</p>
+        </div>
+
         <div class="content-block" id="content-NPC">
-          <h2>Заголовок2</h2>
+          <h2>NPC</h2>
           <p class="subtitle">Подзаголовок</p>
           <p>текст описание</p>
         </div>
- 
+
         <div class="content-block" id="content-races">
-          <h2>Заголовок3</h2>
+          <h2>Расы</h2>
           <p class="subtitle">Подзаголовок</p>
           <p>текст описание</p>
         </div>
- 
+
         <div class="content-block" id="content-spells">
-          <h2>Заголовок4</h2>
-          <p class="subtitle">Подзаголовок</p>
-          <p>текст описание гав писька</p>
-        </div>
- 
-        <div class="content-block" id="content-map">
-          <h2>Заголовок5</h2>
+          <h2>Заклинания</h2>
           <p class="subtitle">Подзаголовок</p>
           <p>текст описание</p>
         </div>
+
+        <div class="content-block" id="content-map">
+          <h2>Карта</h2>
+          <p class="subtitle">Подзаголовок</p>
+          <p>текст описание</p>
+        </div>
+
       </main>
- 
     </div>
   </div>
-  
+
   <script>
     const btns = document.querySelectorAll('.nav-btn');
     const blocks = document.querySelectorAll('.content-block');
+
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
         btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
@@ -117,12 +143,30 @@
         document.getElementById('content-' + btn.dataset.target).classList.add('active');
       });
     });
+
     document.getElementById('home-link').addEventListener('click', (e) => {
-  e.preventDefault(); // отменить переход по ссылке
-  btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
-  blocks.forEach(b => b.classList.remove('active'));
-  document.getElementById('content-welcome').classList.add('active');
-});
+      e.preventDefault();
+      btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      blocks.forEach(b => b.classList.remove('active'));
+      document.getElementById('content-welcome').classList.add('active');
+    });
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        blocks.forEach(b => b.classList.remove('active'));
+        btns.forEach(b => b.classList.remove('active'));
+        document.getElementById('content-' + card.dataset.target).classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.back-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        blocks.forEach(b => b.classList.remove('active'));
+        btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+        document.getElementById('content-' + btn.dataset.target).classList.add('active');
+        document.querySelector('[data-target="players"]').classList.add('active');
+      });
+    });
   </script>
 
 </body>
