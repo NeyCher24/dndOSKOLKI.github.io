@@ -50,6 +50,16 @@ h1 {
   color: inherit;
 }
 
+.group-title {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 400;
+ 
+ 
+}
+
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +100,6 @@ h1 {
   transition: border 0.2s;
   display: block;
 }
-
 
 
 .cards-grid .card-name {
@@ -171,7 +180,7 @@ h1 {
 }
 
 .content-block h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 8px;
   color: white;
