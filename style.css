@@ -69,7 +69,7 @@ h1 {
   cursor: pointer;
   vertical-align: top;
   border: 2px solid transparent;
-  border-radius: 12px;
+  border-radius: 22px;
   padding: 8px;
   transition: border 0.2s;
 }
@@ -114,6 +114,7 @@ h1 {
   border-color: white;
   color: white;
 }
+
 
 .nav-btn {
   display: flex;
