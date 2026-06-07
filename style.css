@@ -45,6 +45,10 @@ h1 {
   color: white;
   flex-shrink: 0;
 }
+#home-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .nav-btn {
   display: flex;

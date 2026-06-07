@@ -11,7 +11,7 @@
     <div class="layout">
  
       <nav class="sidebar" aria-label="INFORMATION CATEGORIES">
-        <h1>ОСКОЛКИ</h1>
+        <a href="#" id="home-link"><h1>ОСКОЛКИ</h1></a>
  
         <button class="nav-btn active" data-target="players" aria-pressed="true">
           Игроки
@@ -32,7 +32,13 @@
       </nav>
  
       <main class="main">
-        <div class="content-block active" id="content-players">
+        <div class="content-block active" id="content-welcome">
+       <h2>Добро пожаловать в Осколки</h2>
+       <p class="subtitle">Выбери раздел слева чтобы начать</p>
+       <p>Здесь хранятся все знания о мире — игроки, NPC, расы и многое другое</p>
+        </div>
+
+        <div class="content-block" id="content-players">
           <h2>Заголовок1</h2>
           <p class="subtitle">Подзаголовок</p>
           <p>текст описание</p>
@@ -78,6 +84,12 @@
         document.getElementById('content-' + btn.dataset.target).classList.add('active');
       });
     });
+    document.getElementById('home-link').addEventListener('click', (e) => {
+  e.preventDefault(); // отменить переход по ссылке
+  btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+  blocks.forEach(b => b.classList.remove('active'));
+  document.getElementById('content-welcome').classList.add('active');
+});
   </script>
 
 </body>
