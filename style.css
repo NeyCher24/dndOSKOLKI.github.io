@@ -56,11 +56,12 @@ h1 {
   gap: 16px;
   margin-top: 16px;
   align-items: flex-start;
+ 
 }
 
 .card {
-  width: 120px;
-  height: 180px;
+  width: 180px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,10 +80,10 @@ h1 {
 }
 
 .card-img {
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  max-height: 120px;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  max-height: 180px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -92,8 +93,8 @@ h1 {
 
 
 
-.card-name {
-  font-size: 14px;
+.cards-grid .card-name {
+  font-size: 19px;
   color: white;
   text-align: center;
   height: 40px;
